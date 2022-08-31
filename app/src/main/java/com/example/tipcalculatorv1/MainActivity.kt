@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         try {
             // convert billString and tipString to floats
             val billAmount = billString.toFloat()
-            val tipPercent = tipString.toFloat()
+            val tipPercent = tipString.toFloat()*0.01f
             // update the Model (bill,tip)
             tipCalc.bill= billAmount
             tipCalc.tip= tipPercent

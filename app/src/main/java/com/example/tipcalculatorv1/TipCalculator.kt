@@ -14,7 +14,7 @@ class TipCalculator(newTip: Float=0.0f, newBill: Float=0.0f) {
         }
 
     fun tipAmount(): Float {
-        return bill * (tip/100)
+        return bill * tip
     }
 
     fun totalAmount(): Float {
