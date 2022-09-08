@@ -34,8 +34,8 @@ class MainActivity : AppCompatActivity() {
 
         val  amountBill = binding.amountBill
         val stringBillAmount = amountBill.text.toString()
-        val billAmount = stringBillAmount.toDouble()
-        tipCalc.bill = billAmount.toFloat()
+        val billAmount = stringBillAmount.toFloat()
+        tipCalc.bill = billAmount
 
         //Get amount of tip percentage
 
