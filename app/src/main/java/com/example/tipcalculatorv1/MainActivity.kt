@@ -1,15 +1,9 @@
-package com.android.tipcalculatorv1
+package com.example.tipcalculatorv1
 
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.tipcalculatorv1.TipCalculator
 import com.example.tipcalculatorv1.databinding.ActivityMainBinding
 import java.text.NumberFormat
 
@@ -59,8 +53,8 @@ class MainActivity : AppCompatActivity() {
         tipCalc.tip = billTip * 0.01f
 
         // covert the amounts to money format
-        val amountTip: String = money.format(tipCalc.tipAmount().toString())
-        val amountTotal: String = money.format(tipCalc.totalAmount().toString())
+        val amountTip: String = money.format(tipCalc.tipAmount()).toString()
+        val amountTotal: String = money.format(tipCalc.totalAmount()).toString()
 
         // display the results in the layout text view for tip and total amount
         binding.amountTotal.text = amountTotal
