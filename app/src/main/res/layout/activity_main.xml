@@ -84,13 +84,5 @@
         android:layout_toRightOf="@+id/label_total"
         android:layout_alignBottom="@+id/label_total"
         android:layout_alignRight="@id/amount_bill" />
-    <Button android:text="@string/button_calculator"
-        android:id="@+id/button_calculator"
-        android:layout_marginTop="20dp"
-        style="@style/ButtonStyle"
-        android:layout_below="@+id/amount_total"
-        android:layout_centerHorizontal="true"
-        android:onClick="calculate"
-        tools:ignore="OnClick" />ß
 
 </RelativeLayout>
